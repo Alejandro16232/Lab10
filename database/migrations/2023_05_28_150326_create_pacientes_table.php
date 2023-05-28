@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('pacientes', function (Blueprint $table) {
             $table->id();
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->integer('celular');
+            $table->date('fecha_ingreso');
+            $table->string('direccion');
+
             $table->timestamps();
         });
     }
